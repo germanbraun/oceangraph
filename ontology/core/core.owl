@@ -1008,14 +1008,6 @@ In this module the following Ontology Design Patterns have been used:
     
 
 
-    <!-- http://dati.beniculturali.it/cis/CulturalInstituteOrSite -->
-
-    <owl:Class rdf:about="http://dati.beniculturali.it/cis/CulturalInstituteOrSite">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
-    </owl:Class>
-    
-
-
     <!-- http://dati.beniculturali.it/cis/NameInTime -->
 
     <owl:Class rdf:about="http://dati.beniculturali.it/cis/NameInTime">
@@ -1261,6 +1253,14 @@ In this module the following Ontology Design Patterns have been used:
         <rdfs:label xml:lang="it">Evento</rdfs:label>
         <owl:versionInfo xml:lang="it">instabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/oceangraph/ontology/core/InstitutionOrSite -->
+
+    <owl:Class rdf:about="https://w3id.org/oceangraph/ontology/core/InstitutionOrSite">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
     </owl:Class>
     
 
