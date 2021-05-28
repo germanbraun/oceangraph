@@ -1,0 +1,9 @@
+Modulos de OceanGraph
+
+- core (German)
+- location (Marcos)
+- biblio
+- temporal
+- sensor
+- OG
+- campaign
