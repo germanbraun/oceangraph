@@ -1,2 +1,1 @@
-# oceangraph
-OceanGraph: Knowledge Graph for Ocean Science
+# OceanGraph: Knowledge Graph for Ocean Science
