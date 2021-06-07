@@ -6,4 +6,4 @@ Modulos de OceanGraph
 - temporal
 - sensor (Germán)
 - OG
-- campaign (Marcos) 
+- cruise (Marcos) 
