@@ -7,3 +7,7 @@ Modulos de OceanGraph
 - sensor (Germán)
 - OG
 - cruise (Marcos) 
+
+
+a) Comenzar a describir metodología.
+b) Justificar alignment bigeonto-ssn/sosa
