@@ -1,1 +1,33 @@
+CQ1@en: What types of platforms are registered?
+CQ1@es: Que tipos de plataformas hay registradas?
+SPARQL1:
 
+CQ2@en: ?
+CQ2@es: Cuales son las personas que tienen el rol de jefe cientifico?
+
+CQ3@en: ?
+CQ3@es: Que instituciones participan en una campaña oceanografica?
+
+CQ4@en: ?
+CQ4@es: Que variables ambientales fueron registradas durante una campaña?
+
+CQ5@en: ?
+CQ5@es: Que variables ambientales fueron registradas en una determinada region marina?
+
+CQ6@en: ?
+CQ6@es: Que puertos de salida y destino tuvo una campaña oceanografica?
+
+CQ7@en: ?
+CQ7@es: Que plataforma estuvo mas tiempo en el mar?
+
+CQ8@en: ?
+CQ8@es: Cuales son las profundidades maximas registradas?
+
+CQ9@en: ?
+CQ9@es: Cuales son las temperaturas maximas registradas?
+
+CQ10@en: ?
+CQ10@es: Existen trayectorias que se solapen?
+
+CQ11@en: ?
+CQ11@es: ?
