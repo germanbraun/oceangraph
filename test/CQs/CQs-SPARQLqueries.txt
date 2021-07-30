@@ -30,10 +30,19 @@ CQ10@en: ?
 CQ10@es: Existen trayectorias que se solapen espacialmente?
 
 CQ11@en: ?
-CQ11@es: Que eventos de muestreo se realizaron en un dia especifico?
+CQ11@es: Que eventos de muestreo se realizaron un dia especifico?
 
 CQ12@en: ?
-CQ12@es: Que eventos de muestreo se realizaron en un dia especifico?
+CQ12@es: Que tipo de trabajos cientificos se publicaron a partir de los datos registrados?
 
 CQ13@en: ?
-CQ13@es: Que eventos de muestreo se realizaron en un dia especifico?
+CQ13@es: ?
+
+CQ14@en: ?
+CQ14@es: ?
+
+CQ15@en: ?
+CQ15@es: ?
+
+CQ16@en: ?
+CQ16@es: ?
