@@ -27,7 +27,13 @@ CQ9@en: ?
 CQ9@es: Cuales son las temperaturas maximas registradas?
 
 CQ10@en: ?
-CQ10@es: Existen trayectorias que se solapen?
+CQ10@es: Existen trayectorias que se solapen espacialmente?
 
 CQ11@en: ?
-CQ11@es: ?
+CQ11@es: Que eventos de muestreo se realizaron en un dia especifico?
+
+CQ12@en: ?
+CQ12@es: Que eventos de muestreo se realizaron en un dia especifico?
+
+CQ13@en: ?
+CQ13@es: Que eventos de muestreo se realizaron en un dia especifico?
