@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/usurio/ontologies/2021/7/untitled-ontology-11"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/usurio/ontologies/2021/7/untitled-ontology-11">
+    <Prefix name="" IRI="http://www.semanticweb.org/usurio/ontologies/2021/7/untitled-ontology-11"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="obda" IRI="https://w3id.org/obda/vocabulary#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="sosa" IRI="http://www.w3.org/ns/sosa/"/>
+    <Prefix name="fabio" IRI="http://purl.org/spar/fabio/"/>
+    <Declaration>
+        <Class abbreviatedIRI="fabio:Article"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fabio:Expression"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fabio:JournalArticle"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fabio:JournalIssue"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fabio:Manifestation"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="fabio:Work"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/vocab/frbr/core#Expression"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sosa:Platform"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.org/vocab/frbr/core#embodiment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.org/vocab/frbr/core#part"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.org/vocab/frbr/core#partOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.org/vocab/frbr/core#realizationOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="dc:title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+    </Declaration>
+    <SubClassOf>
+        <Class abbreviatedIRI="fabio:Expression"/>
+        <Class IRI="http://purl.org/vocab/frbr/core#Expression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="fabio:Expression"/>
+        <ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="http://purl.org/vocab/frbr/core#part"/>
+                <Class IRI="http://purl.org/vocab/frbr/core#Expression"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="http://purl.org/vocab/frbr/core#partOf"/>
+                <Class IRI="http://purl.org/vocab/frbr/core#Expression"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="fabio:Expression"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.org/vocab/frbr/core#embodiment"/>
+            <Class abbreviatedIRI="fabio:Manifestation"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="fabio:Expression"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.org/vocab/frbr/core#realizationOf"/>
+            <Class abbreviatedIRI="fabio:Work"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="fabio:JournalArticle"/>
+        <Class abbreviatedIRI="fabio:Article"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="fabio:JournalArticle"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.org/vocab/frbr/core#partOf"/>
+            <Class abbreviatedIRI="fabio:JournalIssue"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>fabio:Expression</AbbreviatedIRI>
+        <Literal xml:lang="en">A fabio:Expression can only have part or be part of another fabio:Expression.  Moreover, it can be a representation only of a fabio:Work, and  it can be embodied only in fabio:Manifestation(s).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>fabio:Expression</AbbreviatedIRI>
+        <Literal xml:lang="en">A subclass of FRBR expression, restricted to expressions of fabio:Works.  For your latest research paper, the preprint submitted to the publisher, and the final published version to which the publisher assigned a unique digital object identifier, are both expressions of the same work.  </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>fabio:Expression</AbbreviatedIRI>
+        <Literal xml:lang="en">expression</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>fabio:JournalArticle</AbbreviatedIRI>
+        <Literal xml:lang="en">An article, typically the realization of a research paper reporting original research findings, published in a journal issue.  </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>fabio:JournalArticle</AbbreviatedIRI>
+        <Literal xml:lang="en">journal article</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>sosa:Platform</AbbreviatedIRI>
+        <Literal xml:lang="en">A Platform is an entity that hosts other entities, particularly Sensors, Actuators, Samplers, and other Platforms.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>sosa:Platform</AbbreviatedIRI>
+        <AbbreviatedIRI>sosa:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sosa:Platform</AbbreviatedIRI>
+        <Literal xml:lang="en">Platform</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>sosa:Platform</AbbreviatedIRI>
+        <Literal xml:lang="en">A Platform is an entity that hosts other entities, particularly Sensors, Actuators, Samplers, and other Platforms.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <AbbreviatedIRI>sosa:Platform</AbbreviatedIRI>
+        <Literal xml:lang="en">A post, buoy, vehicle, ship, aircraft, satellite, cell-phone, human or animal may act as platforms for (technical or biological) sensors or actuators.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
