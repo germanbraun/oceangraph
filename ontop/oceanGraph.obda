@@ -1,0 +1,23 @@
+[PrefixDeclaration]
+:		http://www.semanticweb.org/usurio/ontologies/2021/7/untitled-ontology-11
+dc:		http://purl.org/dc/elements/1.1/
+owl:		http://www.w3.org/2002/07/owl#
+rdf:		http://www.w3.org/1999/02/22-rdf-syntax-ns#
+xml:		http://www.w3.org/XML/1998/namespace
+xsd:		http://www.w3.org/2001/XMLSchema#
+obda:		https://w3id.org/obda/vocabulary#
+rdfs:		http://www.w3.org/2000/01/rdf-schema#
+sosa:		http://www.w3.org/ns/sosa/
+fabio:		http://purl.org/spar/fabio/
+
+[MappingDeclaration] @collection [[
+mappingId	MAP-PLATFORMS
+target		:platform{claveU} a sosa:Platform . 
+source		SELECT claveU FROM oceangraph.individuo
+
+mappingId	MAP-BIBLIOGRAPOHY
+target		:oceangraph/expression/{ID} a fabio:Expression ; dc:title {titulo} . 
+source		SELECT *
+			FROM oceangraph.publicaciones
+			where doi is not null;
+]]
