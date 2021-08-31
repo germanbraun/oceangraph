@@ -14,9 +14,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:schema="http://schema.org/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/gab/ontologies/2021/5/untitled-ontology-69">
-        <owl:imports rdf:resource="http://gmo"/>
         <owl:imports rdf:resource="http://crowd.fi.uncoma.edu.ar/ontologies/module_fabio.owl"/>
-        <owl:imports rdf:resource="http://www.w3.org/ns/ssn/"/>
     </owl:Ontology>
 </rdf:RDF>
 
